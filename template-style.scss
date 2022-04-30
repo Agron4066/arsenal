@@ -1,0 +1,67 @@
+/* You can add global styles, and also import other style files here */
+@import "mixins";
+/*使わない場合は削除---Googleフォント M+PLUS+Rounded+1c*/
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;900&display=swap');
+
+body{
+  @include no-margin-padding;
+  width: 100%;
+  font-family:  'M PLUS Rounded 1c', sans-serif; /*font-familyは案件によって変える*/
+}
+
+header, section, footer{
+  margin: 0;
+  width: 100%;
+}
+
+/*ブレイクポイント別のhタグの設定--個々の値は案件によって変える*/
+@media screen and (min-width: $pc-min){
+  h1{
+    margin: 0px;
+    font-size: 40px;
+  }
+  h2{
+    margin: 0px;
+    font-size: 30px;
+  }
+  h3{
+    margin: 0px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: $tb-min) and (max-width: $tb-max){
+  h1{
+    margin: 0px;
+    font-size: 30px;
+  }
+  h2{
+    margin: 0px;
+    font-size: 30px;
+  }
+  h3{
+    margin: 0px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: $sp-max){
+  h1{
+    margin: 0px;
+    font-size: 25px;
+  }
+  h2{
+    margin: 0px;
+    font-size: 20px;
+  }
+  h3{
+    margin: 0px;
+    font-size: 10px;
+  }
+}
+
+
+/*---------- You can add styles of each sections here ----------*/
+header{}
+#section1{}
+#section2{}
+#section3{}
+#footer{}
