@@ -103,6 +103,12 @@ $sp-max: 599px;
   @media screen and (max-width: $sp-max){height: $sp-height;}
 }
 
+/*font-size*/
+@mixin resp-font-size($pc-fsize: 40px, $tb-fsize: 30px, $sp-fsize: 20px) {
+  @media screen and (min-width: $pc-min){height: $pc-fsize;}
+  @media screen and (min-width: $tb-min) and (max-width: $tb-max){height: $tb-fsize;}
+  @media screen and (max-width: $sp-max){height: $sp-fsize;}
+}
 
 /*--PCとSPだけの場合--*/
 /*position上右下左*/
@@ -183,6 +189,12 @@ $sp-max: 599px;
 @mixin resp-ps-height($pc-height: 412px, $sp-height: 130px) {
   @media screen and (min-width: $pc-min){height: $pc-height;}
   @media screen and (max-width: $sp-max){height: $sp-height;}
+}
+
+/*font-size*/
+@mixin resp-ps-font-size($pc-fsize: 40px, $sp-fsize: 20px) {
+  @media screen and (min-width: $pc-min){height: $pc-fsize;}
+  @media screen and (max-width: $sp-max){height: $sp-fsize;}
 }
 
 
@@ -267,6 +279,11 @@ $sp-max: 599px;
   @media screen and (max-width: $sp-max){height: $sp-height;}
 }
 
+/*font-size*/
+@mixin resp-ps-font-size($tb-fsize: 30px, $sp-fsize: 20px) {
+  @media screen and (min-width: $tb-min){height: $tb-fsize;}
+  @media screen and (max-width: $sp-max){height: $sp-fsize;}
+}
 
 
 /*---ブレイクポイントを含まないもの---*/

@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* You can add global styles, and also import other style files here */
+/*ブレイクポイント*/
+/*---ソリッドレイアウト用---*/
+/*--PC、TB、SPがある場合--*/
+/*position上右下左*/
+/*margin上右下左*/
+/*padding上右下左*/
+/*margin、padding 上下*/
+/*width*/
+/*height*/
+/*font-size*/
+/*--PCとSPだけの場合--*/
+/*position上右下左*/
+/*margin上右下左*/
+/*padding上右下左*/
+/*margin、padding 上下*/
+/*width*/
+/*height*/
+/*font-size*/
+/*--TBとSPだけの場合--*/
+/*position上右下左*/
+/*margin上右下左*/
+/*padding上右下左*/
+/*margin、padding 上下*/
+/*width*/
+/*height*/
+/*font-size*/
+/*---ブレイクポイントを含まないもの---*/
+/*-margin、padding-*/
+/*-中央寄せ-*/
+/*block要素*/
+/*display: flex;*/
+/*-幅いっぱい-*/
+/*色を塗って幅いっぱい*/
+/*縦横比を保って幅いっぱい*/
+/*色の変数*/
+/*使わない場合は削除---Googleフォント M+PLUS+Rounded+1c*/
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  /*font-familyは案件によって変える*/
+}
+
+header, section, footer {
+  margin: 0;
+  width: 100%;
+}
+
+/*ブレイクポイント別のhタグの設定--個々の値は案件によって変える*/
+@media screen and (min-width: 1025px) {
+  h1 {
+    margin: 0px;
+    font-size: 40px;
+  }
+
+  h2 {
+    margin: 0px;
+    font-size: 30px;
+  }
+
+  h3 {
+    margin: 0px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  h1 {
+    margin: 0px;
+    font-size: 30px;
+  }
+
+  h2 {
+    margin: 0px;
+    font-size: 30px;
+  }
+
+  h3 {
+    margin: 0px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 599px) {
+  h1 {
+    margin: 0px;
+    font-size: 25px;
+  }
+
+  h2 {
+    margin: 0px;
+    font-size: 20px;
+  }
+
+  h3 {
+    margin: 0px;
+    font-size: 10px;
+  }
+}
+/*---------- You can add styles of each sections here ----------*/
+
+/*# sourceMappingURL=template-style.css.map */
