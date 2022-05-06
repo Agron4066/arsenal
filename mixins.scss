@@ -105,9 +105,9 @@ $sp-max: 599px;
 
 /*font-size*/
 @mixin resp-font-size($pc-fsize: 40px, $tb-fsize: 30px, $sp-fsize: 20px) {
-  @media screen and (min-width: $pc-min){height: $pc-fsize;}
-  @media screen and (min-width: $tb-min) and (max-width: $tb-max){height: $tb-fsize;}
-  @media screen and (max-width: $sp-max){height: $sp-fsize;}
+  @media screen and (min-width: $pc-min){font-size: $pc-fsize;}
+  @media screen and (min-width: $tb-min) and (max-width: $tb-max){font-size: $tb-fsize;}
+  @media screen and (max-width: $sp-max){font-size: $sp-fsize;}
 }
 
 /*--PCとSPだけの場合--*/
@@ -193,8 +193,8 @@ $sp-max: 599px;
 
 /*font-size*/
 @mixin resp-ps-font-size($pc-fsize: 40px, $sp-fsize: 20px) {
-  @media screen and (min-width: $pc-min){height: $pc-fsize;}
-  @media screen and (max-width: $sp-max){height: $sp-fsize;}
+  @media screen and (min-width: $pc-min){font-size: $pc-fsize;}
+  @media screen and (max-width: $sp-max){font-size: $sp-fsize;}
 }
 
 
@@ -281,8 +281,8 @@ $sp-max: 599px;
 
 /*font-size*/
 @mixin resp-ps-font-size($tb-fsize: 30px, $sp-fsize: 20px) {
-  @media screen and (min-width: $tb-min){height: $tb-fsize;}
-  @media screen and (max-width: $sp-max){height: $sp-fsize;}
+  @media screen and (min-width: $tb-min){font-size: $tb-fsize;}
+  @media screen and (max-width: $sp-max){font-size: $sp-fsize;}
 }
 
 
