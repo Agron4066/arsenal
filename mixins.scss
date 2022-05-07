@@ -213,13 +213,13 @@ $sp-max: 599px;
 }
 
 /*line-height*/
-@mixin resp-line-height($pc-lheight: 1.0, $sp-lheight: 1.0) {
+@mixin resp-ps-line-height($pc-lheight: 1.0, $sp-lheight: 1.0) {
   @media screen and (min-width: $pc-min){font-size: $pc-lheight;}
   @media screen and (max-width: $sp-max){font-size: $sp-lheight;}
 }
 
 /*line-height*/
-@mixin resp-letter-spacing($pc-lspacing: 0.01, $sp-lspacing: 0.01) {
+@mixin resp-ps-letter-spacing($pc-lspacing: 0.01, $sp-lspacing: 0.01) {
   @media screen and (min-width: $pc-min){font-size: $pc-lspacing;}
   @media screen and (max-width: $sp-max){font-size: $sp-lspacing;}
 }
@@ -313,13 +313,13 @@ $sp-max: 599px;
 }
 
 /*line-height*/
-@mixin resp-line-height($tb-lheight: 1.0, $sp-lheight: 1.0) {
+@mixin resp-ts-line-height($tb-lheight: 1.0, $sp-lheight: 1.0) {
   @media screen and (min-width: $tb-min){font-size: $tb-lheight;}
   @media screen and (max-width: $sp-max){font-size: $sp-lheight;}
 }
 
 /*line-height*/
-@mixin resp-letter-spacing($tb-lspacing: 0.01, $sp-lspacing: 0.01) {
+@mixin resp-ts-letter-spacing($tb-lspacing: 0.01, $sp-lspacing: 0.01) {
   @media screen and (min-width: $tb-min){font-size: $tb-lspacing;}
   @media screen and (max-width: $sp-max){font-size: $sp-lspacing;}
 }
