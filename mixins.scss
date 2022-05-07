@@ -110,6 +110,21 @@ $sp-max: 599px;
   @media screen and (max-width: $sp-max){font-size: $sp-fsize;}
 }
 
+/*line-height*/
+@mixin resp-line-height($pc-lheight: 1.0, $tb-lheight: 1.0, $sp-lheight: 1.0) {
+  @media screen and (min-width: $pc-min){font-size: $pc-lheight;}
+  @media screen and (min-width: $tb-min) and (max-width: $tb-max){font-size: $tb-lheight;}
+  @media screen and (max-width: $sp-max){font-size: $sp-lheight;}
+}
+
+/*line-height*/
+@mixin resp-letter-spacing($pc-lspacing: 0.01, $tb-lspacing: 0.01, $sp-lspacing: 0.01) {
+  @media screen and (min-width: $pc-min){font-size: $pc-lspacing;}
+  @media screen and (min-width: $tb-min) and (max-width: $tb-max){font-size: $tb-lspacing;}
+  @media screen and (max-width: $sp-max){font-size: $sp-lspacing;}
+}
+
+
 /*--PCとSPだけの場合--*/
 /*position上右下左*/
 @mixin resp-ps-top($pc-t: 0px, $sp-t: 0px) {
@@ -195,6 +210,18 @@ $sp-max: 599px;
 @mixin resp-ps-font-size($pc-fsize: 40px, $sp-fsize: 20px) {
   @media screen and (min-width: $pc-min){font-size: $pc-fsize;}
   @media screen and (max-width: $sp-max){font-size: $sp-fsize;}
+}
+
+/*line-height*/
+@mixin resp-line-height($pc-lheight: 1.0, $sp-lheight: 1.0) {
+  @media screen and (min-width: $pc-min){font-size: $pc-lheight;}
+  @media screen and (max-width: $sp-max){font-size: $sp-lheight;}
+}
+
+/*line-height*/
+@mixin resp-letter-spacing($pc-lspacing: 0.01, $sp-lspacing: 0.01) {
+  @media screen and (min-width: $pc-min){font-size: $pc-lspacing;}
+  @media screen and (max-width: $sp-max){font-size: $sp-lspacing;}
 }
 
 
@@ -283,6 +310,18 @@ $sp-max: 599px;
 @mixin resp-ps-font-size($tb-fsize: 30px, $sp-fsize: 20px) {
   @media screen and (min-width: $tb-min){font-size: $tb-fsize;}
   @media screen and (max-width: $sp-max){font-size: $sp-fsize;}
+}
+
+/*line-height*/
+@mixin resp-line-height($tb-lheight: 1.0, $sp-lheight: 1.0) {
+  @media screen and (min-width: $tb-min){font-size: $tb-lheight;}
+  @media screen and (max-width: $sp-max){font-size: $sp-lheight;}
+}
+
+/*line-height*/
+@mixin resp-letter-spacing($tb-lspacing: 0.01, $sp-lspacing: 0.01) {
+  @media screen and (min-width: $tb-min){font-size: $tb-lspacing;}
+  @media screen and (max-width: $sp-max){font-size: $sp-lspacing;}
 }
 
 
