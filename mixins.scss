@@ -112,16 +112,16 @@ $sp-max: 599px;
 
 /*line-height*/
 @mixin resp-line-height($pc-lheight: 1.0, $tb-lheight: 1.0, $sp-lheight: 1.0) {
-  @media screen and (min-width: $pc-min){font-size: $pc-lheight;}
-  @media screen and (min-width: $tb-min) and (max-width: $tb-max){font-size: $tb-lheight;}
-  @media screen and (max-width: $sp-max){font-size: $sp-lheight;}
+  @media screen and (min-width: $pc-min){line-height: $pc-lheight;}
+  @media screen and (min-width: $tb-min) and (max-width: $tb-max){line-height: $tb-lheight;}
+  @media screen and (max-width: $sp-max){line-height: $sp-lheight;}
 }
 
-/*line-height*/
+/*letter-spacing*/
 @mixin resp-letter-spacing($pc-lspacing: 0.01, $tb-lspacing: 0.01, $sp-lspacing: 0.01) {
-  @media screen and (min-width: $pc-min){font-size: $pc-lspacing;}
-  @media screen and (min-width: $tb-min) and (max-width: $tb-max){font-size: $tb-lspacing;}
-  @media screen and (max-width: $sp-max){font-size: $sp-lspacing;}
+  @media screen and (min-width: $pc-min){letter-spacing: $pc-lspacing;}
+  @media screen and (min-width: $tb-min) and (max-width: $tb-max){letter-spacing: $tb-lspacing;}
+  @media screen and (max-width: $sp-max){letter-spacing: $sp-lspacing;}
 }
 
 
@@ -214,14 +214,14 @@ $sp-max: 599px;
 
 /*line-height*/
 @mixin resp-ps-line-height($pc-lheight: 1.0, $sp-lheight: 1.0) {
-  @media screen and (min-width: $pc-min){font-size: $pc-lheight;}
-  @media screen and (max-width: $sp-max){font-size: $sp-lheight;}
+  @media screen and (min-width: $pc-min){line-height: $pc-lheight;}
+  @media screen and (max-width: $sp-max){line-height: $sp-lheight;}
 }
 
-/*line-height*/
+/*letter-spacing*/
 @mixin resp-ps-letter-spacing($pc-lspacing: 0.01, $sp-lspacing: 0.01) {
-  @media screen and (min-width: $pc-min){font-size: $pc-lspacing;}
-  @media screen and (max-width: $sp-max){font-size: $sp-lspacing;}
+  @media screen and (min-width: $pc-min){letter-spacing: $pc-lspacing;}
+  @media screen and (max-width: $sp-max){letter-spacing: $sp-lspacing;}
 }
 
 
@@ -314,14 +314,14 @@ $sp-max: 599px;
 
 /*line-height*/
 @mixin resp-ts-line-height($tb-lheight: 1.0, $sp-lheight: 1.0) {
-  @media screen and (min-width: $tb-min){font-size: $tb-lheight;}
-  @media screen and (max-width: $sp-max){font-size: $sp-lheight;}
+  @media screen and (min-width: $tb-min){line-height: $tb-lheight;}
+  @media screen and (max-width: $sp-max){line-height: $sp-lheight;}
 }
 
-/*line-height*/
+/*letter-spacing*/
 @mixin resp-ts-letter-spacing($tb-lspacing: 0.01, $sp-lspacing: 0.01) {
-  @media screen and (min-width: $tb-min){font-size: $tb-lspacing;}
-  @media screen and (max-width: $sp-max){font-size: $sp-lspacing;}
+  @media screen and (min-width: $tb-min){letter-spacing: $tb-lspacing;}
+  @media screen and (max-width: $sp-max){letter-spacing: $sp-lspacing;}
 }
 
 
