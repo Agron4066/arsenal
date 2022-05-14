@@ -28,6 +28,18 @@ $sp-max: 599px;
   @media screen and (max-width: $sp-max){left: $sp-l;}
 }
 
+/*gap*/
+@mixin resp-column-gap($pc-cg: 0px, $tb-cg: 0px, $sp-cg: 0px) {
+  @media screen and (min-width: $pc-min){column-gap: $pc-cg;}
+  @media screen and (min-width: $tb-min) and (max-width: $tb-max){column-gap: $tb-cg;}
+  @media screen and (max-width: $sp-max){column-gap: $sp-cg;}
+}
+@mixin resp-row-gap($pc-rg: 0px, $tb-rg: 0px, $sp-rg: 0px) {
+  @media screen and (min-width: $pc-min){row-gap: $pc-rg;}
+  @media screen and (min-width: $tb-min) and (max-width: $tb-max){row-gap: $tb-rg;}
+  @media screen and (max-width: $sp-max){row-gap: $sp-rg;}
+}
+
 /*margin上右下左*/
 @mixin resp-margin-top($pc-mt: 0px, $tb-mt: 0px, $sp-mt: 0px) {
   @media screen and (min-width: $pc-min){margin-top: $pc-mt;}
@@ -144,6 +156,16 @@ $sp-max: 599px;
   @media screen and (max-width: $sp-max){left: $sp-l;}
 }
 
+/*gap*/
+@mixin resp-ps-column-gap($pc-cg: 0px,$sp-cg: 0px) {
+  @media screen and (min-width: $pc-min){column-gap: $pc-cg;}
+  @media screen and (max-width: $sp-max){column-gap: $sp-cg;}
+}
+@mixin resp-row-gap($pc-rg: 0px, $sp-rg: 0px) {
+  @media screen and (min-width: $pc-min){row-gap: $pc-rg;}
+  @media screen and (max-width: $sp-max){row-gap: $sp-rg;}
+}
+
 /*margin上右下左*/
 @mixin resp-ps-margin-top($pc-mt: 0px, $sp-mt: 0px) {
   @media screen and (min-width: $pc-min){margin-top: $pc-mt;}
@@ -242,6 +264,16 @@ $sp-max: 599px;
 @mixin resp-ts-left($tb-l: 0px, $sp-l: 0px) {
   @media screen and (min-width: $tb-min){left: $tb-l;}
   @media screen and (max-width: $sp-max){left: $sp-l;}
+}
+
+/*gap*/
+@mixin resp-column-gap($tb-cg: 0px, $sp-cg: 0px) {
+  @media screen and (min-width: $tb-min){column-gap: $tb-cg;}
+  @media screen and (max-width: $sp-max){column-gap: $sp-cg;}
+}
+@mixin resp-row-gap($tb-rg: 0px, $sp-rg: 0px) {
+  @media screen and (min-width: $tb-min){row-gap: $tb-rg;}
+  @media screen and (max-width: $sp-max){row-gap: $sp-rg;}
 }
 
 /*margin上右下左*/
