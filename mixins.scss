@@ -28,6 +28,20 @@ $sp-max: 599px;
   @media screen and (max-width: $sp-max){left: $sp-l;}
 }
 
+/*flex-wrap*/
+@mixin resp-flex-wrap($pc-fw: nowrap, $tp-fw: wrap, $sp-fw: wrap) {
+  @media screen and (min-width: $pc-min){flex-wrap: $pc-fw;}
+  @media screen and (min-width: $tb-min) and (max-width: $tb-max){flex-wrap: $tb-fw;}
+  @media screen and (max-width: $sp-max){flex-wrap: $sp-fw;}
+}
+
+/*flex-direction*/
+@mixin resp-ps-flex-direction($pc-fd: row, $tb-fd: column, $sp-fd: column) {
+  @media screen and (min-width: $pc-min){flex-direction: $pc-fd;}
+  @media screen and (min-width: $tb-min) and (max-width: $tb-max){flex-direction: $tb-fd;}
+  @media screen and (max-width: $sp-max){flex-direction: $sp-fd;}
+}
+
 /*gap*/
 @mixin resp-column-gap($pc-cg: 0px, $tb-cg: 0px, $sp-cg: 0px) {
   @media screen and (min-width: $pc-min){column-gap: $pc-cg;}
@@ -136,7 +150,6 @@ $sp-max: 599px;
   @media screen and (max-width: $sp-max){letter-spacing: $sp-lspacing;}
 }
 
-
 /*--PCとSPだけの場合--*/
 /*position上右下左*/
 @mixin resp-ps-top($pc-t: 0px, $sp-t: 0px) {
@@ -154,6 +167,18 @@ $sp-max: 599px;
 @mixin resp-ps-left($pc-l: 0px, $sp-l: 0px) {
   @media screen and (min-width: $pc-min){left: $pc-l;}
   @media screen and (max-width: $sp-max){left: $sp-l;}
+}
+
+/*flex-wrap*/
+@mixin resp-ps-flex-wrap($pc-fw: nowrap, $sp-fw: wrap) {
+  @media screen and (min-width: $pc-min){flex-wrap: $pc-fw;}
+  @media screen and (max-width: $sp-max){flex-wrap: $sp-fw;}
+}
+
+/*flex-direction*/
+@mixin resp-ps-flex-direction($pc-fd: row, $sp-fd: column) {
+  @media screen and (min-width: $pc-min){flex-direction: $pc-fd;}
+  @media screen and (max-width: $sp-max){flex-direction: $sp-fd;}
 }
 
 /*gap*/
@@ -266,6 +291,18 @@ $sp-max: 599px;
   @media screen and (max-width: $sp-max){left: $sp-l;}
 }
 
+/*flex-wrap*/
+@mixin resp-ps-flex-wrap($tb-fw: nowrap, $sp-fw: wrap) {
+  @media screen and (min-width: $tb-min){flex-wrap: $tb-fw;}
+  @media screen and (max-width: $sp-max){flex-wrap: $sp-fw;}
+}
+
+/*flex-direction*/
+@mixin resp-ps-flex-direction($tb-fd: row, $sp-fd: column) {
+  @media screen and (min-width: $tb-min){flex-direction: $tb-fd;}
+  @media screen and (max-width: $sp-max){flex-direction: $sp-fd;}
+}
+
 /*gap*/
 @mixin resp-column-gap($tb-cg: 0px, $sp-cg: 0px) {
   @media screen and (min-width: $tb-min){column-gap: $tb-cg;}
@@ -355,7 +392,6 @@ $sp-max: 599px;
   @media screen and (min-width: $tb-min){letter-spacing: $tb-lspacing;}
   @media screen and (max-width: $sp-max){letter-spacing: $sp-lspacing;}
 }
-
 
 /*---ブレイクポイントを含まないもの---*/
 /*-margin、padding-*/
